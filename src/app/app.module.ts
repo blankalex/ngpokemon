@@ -8,13 +8,15 @@ import { HeaderComponent } from "./header/header.component";
 import { ContentComponent } from "./content/content.component";
 import { Error404Component } from "./error404/error404.component";
 import { MatToolbar, MatToolbarModule } from "@angular/material";
+import { PokemonsComponent } from './pokemons/pokemons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ContentComponent,
-    Error404Component
+    Error404Component,
+    PokemonsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,7 @@
-<p>content works!</p>
+<div *ngIf="dataAPI !== undefined && dataAPI.count > 0">
+  <app-pokemons *ngFor="let x of dataAPI.results" [name]="x.name" [url]="x.url">
+  </app-pokemons>
+</div>
+<div *ngIf="!(dataAPI !== undefined && dataAPI.count > 0)">
+  Sem dados
+</div>
